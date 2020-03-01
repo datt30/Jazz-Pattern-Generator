@@ -1,11 +1,6 @@
 package com.monkeyslabteam.www.jazzpatterngenerator.views
 
-/**
- * Created by David Tamayo on 28/02/2020.
- * github: datt30
- */
-
-import android.support.v7.app.AppCompatActivity
+import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
 import android.widget.EditText
@@ -13,7 +8,6 @@ import android.widget.TextView
 import com.monkeyslabteam.www.jazzpatterngenerator.R
 import com.monkeyslabteam.www.jazzpatterngenerator.contracts.JazzPattern
 import com.monkeyslabteam.www.jazzpatterngenerator.presenters.JazzPatternPresenter
-
 
 class JazzPatternView : AppCompatActivity(), JazzPattern.view{
 
@@ -42,4 +36,5 @@ class JazzPatternView : AppCompatActivity(), JazzPattern.view{
     override fun showResult(res: String) {
         txtElement.text = res
     }
+
 }
